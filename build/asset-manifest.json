@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.158d31ce.css",
+    "main.js": "/static/js/main.cd178232.js",
+    "static/js/787.e650fd55.chunk.js": "/static/js/787.e650fd55.chunk.js",
+    "static/media/shop.jpg": "/static/media/shop.1902a79db6e9e48401de.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/doodle-glowing-artwork-vhu5ts3hs8bxyq5a.jpg": "/static/media/doodle-glowing-artwork-vhu5ts3hs8bxyq5a.ab06b4f99b675e0f597e.jpg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/banner.png": "/static/media/banner.96640518fc947eacca28.png",
+    "static/media/notfound.png": "/static/media/notfound.fdf48961b0fce1e6672a.png",
+    "static/media/the-mercernary-deadpool-3d0rnmrbypxitwz9.jpg": "/static/media/the-mercernary-deadpool-3d0rnmrbypxitwz9.5396e5ef6b428e3da82d.jpg",
+    "index.html": "/index.html",
+    "main.158d31ce.css.map": "/static/css/main.158d31ce.css.map",
+    "main.cd178232.js.map": "/static/js/main.cd178232.js.map",
+    "787.e650fd55.chunk.js.map": "/static/js/787.e650fd55.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.158d31ce.css",
+    "static/js/main.cd178232.js"
+  ]
+}
