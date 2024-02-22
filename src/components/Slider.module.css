@@ -1,0 +1,28 @@
+
+.jss1232{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+  }
+
+.arrival{
+    display: block;
+    width: 100%;
+}
+
+

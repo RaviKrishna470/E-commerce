@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+
+.App {
+  text-align: center;
+}
+/* adding css for navigation animation */
+.nav-link {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  /* color: #031D44; */
+  
+  padding: 20px 0px;
+  margin: 0px 10px;
+  display: inline-block;
+  position: relative;
+  /* opacity: 0.75; */
+}
+
+.nav-link:hover {
+  opacity: 1;
+  
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  /* background-color: #031D44; */
+  background-color: #1254b8;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 9px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 82%;
+}
+/* navigation css ends here */
+/* delete icon css  */
+.delete-icon{
+  cursor: pointer;
+}
+
+
+
+/* //////////////////////////////////////// */
+
+/* nav bar */
+nav{
+  background-image: url('./components/doodle-glowing-artwork-vhu5ts3hs8bxyq5a.jpg');
+}
+
+.allproducts{
+  font-family: "Honk", system-ui;
+}
+.logo_icon{
+  color: white;
+
+}
+
+.log:hover{
+  background-color: grey;
+  color: white;
+}
+
+
+@keyframes wave {
+  0% {
+    color: #ff0000; /* Start color */
+    text-shadow: 0 0 9px #00c8ffc2; /* Optional text shadow for better visibility */
+  }
+  50% {
+    color: #00ff00; /* Middle color */
+    text-shadow: 0 0 9px #00d9ff55; /* Optional text shadow for better visibility */
+  }
+  100% {
+    color: #0000ff; /* End color */
+    text-shadow: 0 0 9px #00b7ff; /* Optional text shadow for better visibility */
+  }
+}
+
+.textwaves {
+  font-size: 36px;
+  animation: wave 3s infinite alternate; /* Set the animation properties */
+}
+
+/* cart page */
+/* add remove buttons of cart */
+
+.plusminus{
+  background-color: rgba(0, 132, 255, 0.688);
+  color: white;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+/* placeorder part */
+
+.placeorder{
+  background-color: black;
+  color: white;
+  padding: 15px;
+ margin-right: 250px;
+ margin-top: 150px;
+ width: 150px;
+ border-radius: 15px;
+
+}
+.placeorder:hover{
+  background-color: rgba(0, 132, 255, 0.688);
+  color: white;
+  border: none;
+}
+
+.popup{
+  background-color:rgba(128, 128, 128, 0.578);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+.popup-content p{
+  margin-top: 15px;
+}
+
+.check{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(10, 192, 10, 0.851);
+  margin-left: 25px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: 900;
+  color: white;
+}
