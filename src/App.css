@@ -92,7 +92,7 @@ nav{
 /* cart page */
 /* add remove buttons of cart */
 
-.plusminus{
+/* .plusminus{
   background-color: rgba(0, 132, 255, 0.688);
   color: white;
   height: 30px;
@@ -102,11 +102,11 @@ nav{
   border: none;
   outline: none;
   transition: 0.5s;
-}
+} */
 
 /* placeorder part */
 
-.placeorder{
+/* .placeorder{
   background-color: black;
   color: white;
   padding: 15px;
@@ -126,6 +126,7 @@ nav{
   background-color:rgba(128, 128, 128, 0.578);
   padding: 30px;
   display: flex;
+  max-height: 15rem;
   justify-content: space-between;
 }
 
@@ -152,4 +153,100 @@ nav{
   font-size: larger;
   font-weight: 900;
   color: white;
+} */
+
+
+
+.plusminus {
+  background-color: rgba(0, 132, 255, 0.688);
+  color: white;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  transition: 0.5s;
 }
+
+.placeorder {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin-right: 250px;
+  margin-top: 150px;
+  width: 150px;
+  border-radius: 15px;
+}
+
+.placeorder:hover {
+  background-color: rgba(0, 132, 255, 0.688);
+  color: white;
+  border: none;
+}
+
+.popup {
+  background-color: rgba(128, 128, 128, 0.578);
+  padding: 30px;
+  display: flex;
+  max-height: 15rem;
+  justify-content: space-between;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.popup-content p {
+  margin-top: 15px;
+}
+
+.check {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(10, 192, 10, 0.851);
+  margin-left: 25px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: 900;
+  color: white;
+}
+.disc{
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .plusminus, .placeorder {
+    height: 40px; 
+    width: 40px;
+    font-size: 16px; 
+  }
+
+  .placeorder {
+    margin-right: 20px; 
+    width: 100%; 
+    margin-top: 20px; 
+  }
+
+  /* Adjust cart item layout for smaller screens */
+  .cart-item {
+    width: 100%; 
+    margin: 20px 0; 
+  }
+
+  img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .disc{
+    display: none;
+  }
+}
+

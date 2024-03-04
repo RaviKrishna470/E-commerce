@@ -10,6 +10,9 @@ const CartPage = () => {
 
   const removeItem = (id) => {
     dispatch(REMOVE(id))
+
+
+    
   }
 
   const addItem = (item) => {
@@ -19,7 +22,9 @@ const CartPage = () => {
     setShowPopup(false)
   }
   const clearAll = () =>{
+
     dispatch(CLEAR_CART())
+
     setShowPopup(true)
   } 
 
@@ -49,7 +54,9 @@ const CartPage = () => {
             <br />
             <img src={x.product.image} alt={x.product.image} height={140} width={150} style={{mixBlendMode:'multiply'}}/>
             <br />
+            <span className="disc">
             {item.description}
+            </span>
             <br />
             
             <div style={{
@@ -67,11 +74,39 @@ const CartPage = () => {
         })
       }
       </div>
-      <div>
-        <button onClick={clearAll} className='placeorder'>Place Order</button>
+    <div className="left"
+    style={{width:"50%"}}>
+
+<div style={{ 
+    width: '300px', 
+    position: 'sticky', 
+   
+    right: '1rem', 
+    top: '0rem', 
+    height: '100vh', 
+    overflowY: 'auto',
+    overflow: 'hidden',
+    padding: '20px',
+    boxShadow: '-2px 0 5px rgba(0,0,0,0.1)'
+  }}>
+    <h2>Cart Summary</h2>
+    {cartData.map((x, i) => (
+      <div key={i} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
+        <span>{x.product.title} x {x.count}</span>
+        <span>${x.product.price * x.count}</span>
       </div>
-      {showPopup &&
-        <div className="popup">
+    ))}
+    <hr />
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <strong>Total:</strong>
+      <strong>${cartData.reduce((acc, curr) => acc + (curr.product.price * curr.count), 0).toFixed(2)}</strong>
+    </div>
+    <button onClick={clearAll} className='placeorder' style={{ marginTop: '20px' }}>Place Order</button>
+    
+  </div>
+ </div>
+ {showPopup &&
+        <div className="popup al-center">
           <div className="popup-content">
             {/* <span className="close" onClick={closePopup}>×</span> */}
             <br />
@@ -82,7 +117,20 @@ const CartPage = () => {
           </div>
         </div>
       }
-    </div>
+ </div>
+
+
+
+
+ 
+
+
+   
+
+
+  
+  
+  
   
   
   )

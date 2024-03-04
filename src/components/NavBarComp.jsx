@@ -18,43 +18,43 @@ const NavBarComp = () => {
         dispatch(REMOVE(id))
     }
     // popup for cart Items
-    const popover = (
-        <Popover id="popover-basic">
-            <table>
-                <thead>
-                    <tr>
-                        <th className='me-5 text-center'>Image</th>
-                        <th className='me-5 text-center'>Item</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        getData.map((x, index) => {
-                            let item = x.product
-                            return <div key={index}>
+    // const popover = (
+    //     <Popover id="popover-basic">
+    //         <table>
+    //             <thead>
+    //                 <tr>
+    //                     <th className='me-5 text-center'>Image</th>
+    //                     <th className='me-5 text-center'>Item</th>
+    //                 </tr>
+    //             </thead>
+    //             <tbody>
+    //                 {
+    //                     getData.map((x, index) => {
+    //                         let item = x.product
+    //                         return <div key={index}>
                                
-                                <tr className='ms-2'>
-                                    <td >
-                                        <img src={item.image} style={{ width: "5rem", height: "5rem" ,margin:"15px 15px"}} alt="" />
-                                    </td>
-                                    <td>
-                                        <div className='text-center mt-3 me-3'>
-                                            <p className='text-center mb-0 fw-bolder'>{item.category}</p>
-                                            <p className='mb-0'>Price: $ {item.price}</p>
-                                            <p className='mb-0'>Rating: {item.rating.rate}&#x2605;</p>
-                                            <p className='mb-0'>{item.title.substring(0, 45)}</p>
-                                            <p className='mt-1' onClick={()=>remove(item.id)}> <i class="fa fa-trash fs-4 delete-icon" aria-hidden="true"></i></p>
-                                        </div>
-                                    </td>
-                                 </tr>
+    //                             <tr className='ms-2'>
+    //                                 <td >
+    //                                     <img src={item.image} style={{ width: "5rem", height: "5rem" ,margin:"15px 15px"}} alt="" />
+    //                                 </td>
+    //                                 <td>
+    //                                     <div className='text-center mt-3 me-3'>
+    //                                         <p className='text-center mb-0 fw-bolder'>{item.category}</p>
+    //                                         <p className='mb-0'>Price: $ {item.price}</p>
+    //                                         <p className='mb-0'>Rating: {item.rating.rate}&#x2605;</p>
+    //                                         <p className='mb-0'>{item.title.substring(0, 45)}</p>
+    //                                         <p className='mt-1' onClick={()=>remove(item.id)}> <i class="fa fa-trash fs-4 delete-icon" aria-hidden="true"></i></p>
+    //                                     </div>
+    //                                 </td>
+    //                              </tr>
                                  
-                            </div>
-                        })
-                    }
-                </tbody>
-            </table>
-        </Popover>
-    );
+    //                         </div>
+    //                     })
+    //                 }
+    //             </tbody>
+    //         </table>
+    //     </Popover>
+    // );
     return (
         <div>
             <Navbar bg="light" variant="light" className='shadow-sm bg-white py-4 '>

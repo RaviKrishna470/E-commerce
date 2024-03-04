@@ -10,6 +10,7 @@ import place from './shop.jpg'
 const Home = () => {
     return (
         <div className='home-banner'>
+          
             <Card className="bg-dark text-white border-0">
                 <Card.Img src={place} style={{mixBlendMode: 'screen' }} alt="banner" />
                 <Slider/>
@@ -20,8 +21,8 @@ const Home = () => {
                        Sale Ends Today
                     </Card.Text>
                     
-                    <Card.Text className='lead fs-4'>Buy Before It's Over</Card.Text>
-                    <Card.Text className='lead fs-1 fw-bold text-dark' >Shop Now <i className='fa fa-shopping-bag'></i></Card.Text>
+                    <Card.Text className='lead fs-5'>Buy Before It's Over</Card.Text>
+                    <Card.Text className='lead fs-2 fw-bold text-dark ' style={{marginTop:'-1rem'}}  >Shop Now <i className='fa fa-shopping-bag'></i></Card.Text>
                   </div>
                 </Card.ImgOverlay>
             </Card>

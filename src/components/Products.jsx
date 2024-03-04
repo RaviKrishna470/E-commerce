@@ -15,9 +15,9 @@ const Products = () => {
     const getProducts = async () => {
         setLoading(true)
         const response = await fetch("https://fakestoreapi.com/products")
-
-        setData(await response.json())
-        setFilter(data)
+        const res = await response.json()
+        setData(res)
+        setFilter(res)
         setLoading(false)
     }
     const Loading = () => {
@@ -52,8 +52,10 @@ const Products = () => {
                 </div>
                 {filter.map((item, i) => {
                     return (
-                        <div className="col-3 mt-5" key={i}>
-                            <Card key={item.id} className="border border-dark">
+                        // <div className="col-3 mt-5 col-md-auto" key={i}>
+                        <div className="  col-12 col-md-6 col-lg-4 g-3" key={i}>
+                        {/* // <div className="  row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" key={i}> */}
+                            <Card key={item.id} className="border border-dark ">
                                 <Card.Img variant="top" style={{ height: '300px' }} src={item.image} />
                                 <Card.Body>
                                     <Card.Title>{item.title.substring(0, 12)}</Card.Title>

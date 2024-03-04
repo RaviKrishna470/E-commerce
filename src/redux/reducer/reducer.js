@@ -16,7 +16,7 @@ export const cartReducer = (state = INIT_STATE, action) => {
                     if(foundItem.product.id === item.product.id) {
                         return {
                             product: item.product,
-                            count: item.count ? item.count + 1 : 1
+                            count:  item.count + 1
                         }
                     }
                     return item
