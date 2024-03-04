@@ -29,8 +29,10 @@ const CartPage = () => {
   } 
 
   return (
-    <div style={{
-      display: 'flex'
+    <div className='main-container' style={{
+      display: 'flex',
+      
+    
     }}>
       <div>
       {
@@ -38,7 +40,7 @@ const CartPage = () => {
           let item = x.product
 
           return (
-          <div style={{
+          <div className='items-card' style={{
             height:'auto',
             width: '50%',
             margin: '50px',
@@ -74,20 +76,21 @@ const CartPage = () => {
         })
       }
       </div>
-    <div className="left"
-    style={{width:"50%"}}>
+    <div className="left "
+    style={{backgroundColor:'pink',width:"100%",height:"100%",position:'sticky',top:"1rem"}}>
 
-<div style={{ 
-    width: '300px', 
+<div className='summary-box' style={{ 
+    width: 'auto', 
     position: 'sticky', 
-   
+   height:'auto',
     right: '1rem', 
     top: '0rem', 
-    height: '100vh', 
-    overflowY: 'auto',
+    height: 'auto', 
+   
     overflow: 'hidden',
     padding: '20px',
-    boxShadow: '-2px 0 5px rgba(0,0,0,0.1)'
+    boxShadow: '-2px 0 5px rgba(0,0,0,0.1)',
+    // backgroundColor:'pink'
   }}>
     <h2>Cart Summary</h2>
     {cartData.map((x, i) => (
